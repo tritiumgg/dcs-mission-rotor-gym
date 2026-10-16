@@ -1,0 +1,15 @@
+model	screenshot	roof	clutter	fits_small	fits_medium	fits_large	note
+ceh_ang_b	ceh_ang_b.jpg	flat	light (few small vents, two low skylight strips)	yes	yes	yes	Best candidate: large clean flat roof ~118x86 m, 27 m AGL, open surroundings. Shot is instance 70566746.
+uniwersam_a_new	uniwersam_a_new.jpg	flat	low	yes	yes	marginal	Two-storey store, 12 m AGL; upper roof looks ~30x30 m, smaller than the 51x40 m box. Trees on one side; instance 70567197 stands next to 55 m home16_twin tower. Shot is instance 70567155.
+korpus_a1	korpus_a1.jpg	flat	moderate (skylight strips, vents)	yes	yes	no	Five-storey block, 22 m AGL, roof narrower than its 30x93 m box suggests. Trees close to walls. Shot is instance 70566761.
+korpus_a	korpus_a.jpg	flat	low	yes	marginal	no	Low annex (12 m AGL) beside korpus_a1 (taller wall alongside) with tree crowns overhanging one side.
+korpus_b	korpus_b.jpg	flat	low (one roof box)	yes	marginal	no	Four-storey block with lower wing; box top is 23 m AGL, which looks higher than the visible roof, so the roof height is unverified. Trees alongside.
+school_a	school_a.jpg	flat	moderate (stairwell boxes)	marginal	no	no	Two parallel narrow (~12 m) three-storey wings, 14 m AGL, surrounded by tall trees.
+polyklinika_a	polyklinika_a.jpg	flat	low (three small boxes)	yes	marginal	no	Four-storey, about 20 m wide, 14 m AGL. Trees crowd both long sides; instance 72311828 is almost hidden by trees, instance 72313136 (shot) is clearer.
+home5m	home5m.jpg	flat	moderate (stairwell boxes)	marginal	no	no	Five-storey slab only 15 m wide, 19 m AGL; open approach from the west.
+home9a	home9a.jpg	flat	moderate (several stair/lift boxes along roof)	yes	marginal	no	Nine-storey slab, 17 m wide, 30 m AGL. Land between boxes. Open field to the west of instance 70567169 (shot).
+home52_hr	home52_hr.jpg	flat	moderate (4-5 stairwell boxes)	marginal	no	no	Five-storey slab 15 m wide, 19 m AGL; boxes break up the roof.
+korpus_d	korpus_d.jpg	flat, stepped	low on lower wing, boxes on tower	yes	marginal	no	Stepped block: lower ~6-storey wing plus taller tower. Box top 39.5 m AGL is the tower; lower wing roof height not measured. Isolated site NNW of spawn, 4.8 km.
+home16_twin	home16_twin.jpg	flat, two staggered sections	moderate (machine rooms)	yes	marginal	no	Sixteen-storey twin tower, 55 m AGL; each roof section ~18-20 m. High, exposed pinnacle-style landing.
+home16a_bash	home16a_bash.jpg	flat	heavy (two large machine rooms)	marginal	no	no	Single sixteen-storey tower, 55 m AGL; little free roof between machine rooms. Probably unsuitable except as an expert Small target.
+ceh_c	ceh_c.jpg	flat	light (one central vent structure)	yes	yes	yes	Large hall ~50x60 m, 26 m AGL; avoid central vent. Power-plant chimneys just south are a tall obstacle. Farthest site (8.3 km SSW).

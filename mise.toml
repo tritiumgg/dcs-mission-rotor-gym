@@ -1,0 +1,45 @@
+[tools]
+node = "24.19.0"
+zig = "0.13.0"
+# Reads .luarc.json at the root, which pins the Lua to 5.1. Pinned so the editor, CI and
+# the agent all analyse the tree the same way.
+lua-language-server = "3.19.1"
+# Crops and compresses screenshots for docs/.
+ffmpeg = "9.0.2"
+
+[env]
+_.path = ["{{config_root}}/.tools/lua51/bin"]
+
+[tasks."build:lua"]
+description = "Build Lua 5.1.5 (the version DCS embeds) into .tools/lua51 with zig cc"
+run = "node tools/build-lua51.mjs"
+
+[tasks.build]
+description = "Build the mission: mission/ + generated content -> out/Rotor_Gym_<version>.miz"
+depends = ["build:lua"]
+run = "node tools/build.mjs"
+
+[tasks.test]
+description = "Run the Lua tests under Lua 5.1"
+depends = ["build:lua"]
+run = "lua tests/run.lua"
+
+# Through `mise exec`: lua-language-server looks for its main.lua beside the binary it was
+# launched as, which the shim is not.
+[tasks.lint]
+description = "Type-check the Lua with lua-language-server and .luarc.json"
+run = "mise exec -- lua-language-server --check . --checklevel=Warning"
+
+[tasks.version]
+description = "Print the version the build would use (from git tags)"
+run = "node tools/version.mjs"
+
+[tasks."release:publish"]
+description = "Publish out/Rotor_Gym_<version>.miz as a GitHub release for the vX.Y.Z tag on HEAD"
+depends = ["build"]
+run = "node tools/release.mjs"
+
+[tasks."miz:unpack"]
+description = "Replace mission/ with the contents of a .miz saved by the Mission Editor"
+usage = 'arg "<miz>" help="Path to the .miz to unpack"'
+run = "node tools/miz.mjs unpack {{usage.miz}} mission"

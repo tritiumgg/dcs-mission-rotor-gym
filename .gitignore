@@ -1,0 +1,5 @@
+/.tools/
+/.build/
+/out/
+# Mission Editor saves; the source of truth is mission/
+/*.miz
